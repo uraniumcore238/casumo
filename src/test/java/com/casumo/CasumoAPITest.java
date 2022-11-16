@@ -19,7 +19,7 @@ public class CasumoAPITest extends TestBase {
 
 
     @CsvSource(value = {
-//            "abcdefghijklmnopqrstuvwxyz         | bcdfghjklmnpqrstvwxz",
+            "abcdefghijklmnopqrstuvwxyz         | bcdfghjklmnpqrstvwxz",
             "!abc!                              | !bc!",
             "#abc                               | #bc",
             "@abc                               | @bc",
@@ -41,7 +41,8 @@ public class CasumoAPITest extends TestBase {
             "<script>alert<script>              | <scrpt>lrt<scrpt>",
             "sb?da                              | sb?d",
             "0123456789abc0123456789            | 0123456789bc0123456789",
-            "abcabc/>                           | bcbc"
+            "abcabc/>                           | bcbc",
+            "abcy                               | bc"
     }, delimiter = '|')
     @Owner("Example owner")
     @Story("Check symbols delition")
