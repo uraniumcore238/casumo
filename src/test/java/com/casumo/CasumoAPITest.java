@@ -69,8 +69,7 @@ public class CasumoAPITest extends TestBase {
 
     @CsvSource(value = {
             "<script>alert</script>             | nullErrorNot Found",
-            "/abcabc>                           | nullErrorNot Found"
-
+            "/abcabc                            | nullErrorNot Found"
 
     }, delimiter = '|')
     @Owner("Example owner")
